@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { BookOpen, Menu, PlayCircle, Trophy, X } from "lucide-react";
 import { useState } from "react";
+import agileChange from "@/assets/agile-change-logo.png";
+import Image from "next/image";
 
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,22 +13,22 @@ const NavBar: React.FC = () => {
     {
       href: "/",
       label: "Início",
-      icon: <PlayCircle className="w-5 h-5 mr-2 text-blue-600" />,
+      icon: <PlayCircle className="w-5 h-5 mr-2 text-[#24E1FC]" />,
     },
     {
       href: "/sobre",
-      label: "Isaac",
-      icon: <BookOpen className="w-5 h-5 mr-2 text-blue-600" />,
+      label: "Sobre",
+      icon: <BookOpen className="w-5 h-5 mr-2 text-[#24E1FC]" />,
     },
     {
-      href: "/cursos",
-      label: "Cursos",
-      icon: <BookOpen className="w-5 h-5 mr-2 text-blue-600" />,
+      href: "/clientes",
+      label: "Clientes",
+      icon: <BookOpen className="w-5 h-5 mr-2 text-[#24E1FC]" />,
     },
     {
       href: "/conquistas",
       label: "Conquistas",
-      icon: <Trophy className="w-5 h-5 mr-2 text-blue-600" />,
+      icon: <Trophy className="w-5 h-5 mr-2 text-[#24E1FC]" />,
     },
   ];
 
@@ -38,13 +40,11 @@ const NavBar: React.FC = () => {
     <nav className="fixed top-0 left-0 w-full bg-blue-950/90 backdrop-blur-md z-50 border-b border-blue-800/50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link
-          href="/"
-          className="text-3xl font-bold text-white tracking-tight 
-        flex items-center hover:text-blue-200 transition-colors"
-        >
-          <span className="text-blue-400 mr-1">.</span>Professor Isaac
-        </Link>
+        <Image
+          src={agileChange}
+          alt="Agile Change Logo"
+          className="w-auto h-20"
+        />
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
@@ -68,7 +68,7 @@ const NavBar: React.FC = () => {
 
           <Link
             href="/matricula"
-            className="bg-blue-600 hover:bg-blue-700 text-white 
+            className="bg-[#24E1FC] hover:bg-blue-700 text-[#2E3A65] 
           px-6 py-2 rounded-full font-semibold 
           transition-colors duration-300 flex items-center shadow-lg shadow-blue-500/20 
           hover:shadow-blue-500/40"
