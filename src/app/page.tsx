@@ -1,13 +1,13 @@
 import About from "./pages/About";
+import Clients from "./pages/Clients";
 import Header from "./pages/Header";
-import Services from "./pages/Services";
 
 export default function Home() {
   return (
     <>
       <Header />
       <About />
-      <Services />
+      <Clients />
     </>
   );
 }

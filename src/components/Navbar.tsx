@@ -43,7 +43,7 @@ const NavBar: React.FC = () => {
         <Image
           src={agileChange}
           alt="Agile Change Logo"
-          className="w-auto h-20"
+          className="w-auto h-14"
         />
 
         {/* Desktop Navigation */}
