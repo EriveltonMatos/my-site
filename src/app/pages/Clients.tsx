@@ -1,6 +1,7 @@
 import { Users, Target, Lightbulb, Globe2 } from "lucide-react";
 import agileAbout from "@/assets/agile-change-about.png";
 import Image from "next/image";
+import ClientsCarousel from "@/components/ClientsCarousel";
 
 
 export default function Clients() {
@@ -43,11 +44,7 @@ export default function Clients() {
 
             <div className="relative">
               {/* Substitua o placeholder pela sua imagem real */}
-              <Image
-                src={agileAbout}
-                alt="Nossos principais clientes"
-                className="w-full rounded-lg shadow-md"
-              />
+              <ClientsCarousel />
             </div>
           </div>
         </div>
