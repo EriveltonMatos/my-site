@@ -23,19 +23,19 @@ export default function About() {
   ];
 
   return (
-    <div className="bg-white py-16">
+    <div className="bg-white py-16 mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Container principal com borda */}
         <div className="relative border-2 border-blue-100 rounded-2xl p-8 md:p-12">
           {/* Elemento decorativo - círculos nos cantos */}
-          <div className="absolute w-4 h-4 bg-blue-600 rounded-full -top-2 -left-2" />
-          <div className="absolute w-4 h-4 bg-blue-600 rounded-full -top-2 -right-2" />
-          <div className="absolute w-4 h-4 bg-blue-600 rounded-full -bottom-2 -left-2" />
-          <div className="absolute w-4 h-4 bg-blue-600 rounded-full -bottom-2 -right-2" />
+          <div className="absolute w-4 h-4 bg-primary rounded-full -top-2 -left-2" />
+          <div className="absolute w-4 h-4 bg-primary rounded-full -top-2 -right-2" />
+          <div className="absolute w-4 h-4 bg-primary rounded-full -bottom-2 -left-2" />
+          <div className="absolute w-4 h-4 bg-primary rounded-full -bottom-2 -right-2" />
 
           {/* Tag decorativa */}
           <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-white px-4">
-            <span className="text-blue-600 font-medium">Nossa Missão</span>
+            <span className="text-blue-600 font-medium text-xl">Nossa Missão</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
