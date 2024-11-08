@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
   	extend: {
 		animation: {
-			'scroll-left': 'scroll-left 30s linear infinite',
+			'scroll-left': 'scroll-left 40s linear infinite',
 		  },
 		  keyframes: {
 			'scroll-left': {

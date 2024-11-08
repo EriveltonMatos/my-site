@@ -1,12 +1,7 @@
-import { Users, Target, Lightbulb, Globe2 } from "lucide-react";
-import agileAbout from "@/assets/agile-change-about.png";
-import Image from "next/image";
+import { Users } from "lucide-react";
 import ClientsCarousel from "@/components/ClientsCarousel";
 
-
 export default function Clients() {
-  
-
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
       {/* Decorative background elements */}
@@ -31,8 +26,6 @@ export default function Clients() {
             o cliente no centro dos nossos pensamentos se tornou natural.
           </p>
         </div>
-
-
 
         {/* Clients Image Section */}
         <div className="relative">
