@@ -2,6 +2,7 @@
 import agileAbout from "@/assets/agile-change-about.png";
 
 import CourseCard from "@/components/CourseCard";
+import { Users } from "lucide-react";
 import { StaticImageData } from "next/image";
 import { Carousel } from "primereact/carousel";
 
@@ -68,9 +69,13 @@ export default function Course() {
     <section className="bg-gradient-to-b from-blue-50 to-white py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
+        <div className="flex items-center justify-center mb-4">
+            <Users className="w-10 h-10 text-blue-600" />
+          </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Nossos Cursos de Agilidade
           </h2>
+          <div className="w-24 h-1 bg-blue-600 mx-auto mb-8" />
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Transforme sua carreira com nossos cursos especializados em
             metodologias ágeis

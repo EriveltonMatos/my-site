@@ -4,6 +4,7 @@ import Clients from "./pages/Clients";
 import Header from "./pages/Header";
 import Pillars from "./pages/Pillars";
 import Course from "./pages/Course";
+import Form from "./pages/Form";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Pillars />
       <Clients />
       <Course />
+      <Form />
     </>
   );
 }

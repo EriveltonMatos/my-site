@@ -11,7 +11,7 @@ interface CourseCardProps {
 export default function CourseCard({ course }: CourseCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl p-5">
-      <div className="relative h-48 w-full">
+      <div className="relative h-64 w-full">
         <Image
           src={course.image}
           alt={course.title}
