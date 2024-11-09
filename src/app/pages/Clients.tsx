@@ -4,7 +4,6 @@ import ClientsCarousel from "@/components/ClientsCarousel";
 export default function Clients() {
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
-
       <div className="relative container mx-auto px-4">
         {/* Header Section */}
         <div className="max-w-4xl mx-auto text-center mb-16">

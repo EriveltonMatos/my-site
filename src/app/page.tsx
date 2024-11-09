@@ -5,6 +5,8 @@ import Header from "./pages/Header";
 import Pillars from "./pages/Pillars";
 import Course from "./pages/Course";
 import Form from "./pages/Form";
+import Footer from "./pages/Footer";
+import IconPhone from "@/components/IconPhone";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Clients />
       <Course />
       <Form />
+      <Footer />
+      <IconPhone />
     </>
   );
 }

@@ -16,8 +16,7 @@ export default function CourseCard({ course }: CourseCardProps) {
           src={course.image}
           alt={course.title}
           layout="fill"
-          objectFit="cover"
-          className="rounded-t-xl"
+          className="rounded-t-xl object-cover"
         />
       </div>
       <div className="p-6">

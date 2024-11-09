@@ -33,7 +33,7 @@ export default function Pillars() {
     <section className="py-20 bg-blue-900">
       <div className="container mx-auto px-10 border p-20 rounded-3xl shadow-lg bg-slate-50">
         <div className="max-w-4xl mx-auto text-center mb-16">
-        <div className="flex items-center justify-center mb-4">
+          <div className="flex items-center justify-center mb-4">
             <Users className="w-10 h-10 text-blue-600" />
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-6 Oxanium">

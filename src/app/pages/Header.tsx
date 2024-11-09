@@ -12,20 +12,20 @@ const slidesData = [
   {
     id: 1,
     image: curso,
-    alt: "Logo da clínica",
-    url: "/events",
+    alt: "Logo do curso",
+    url: "/cursos",
   },
   {
     id: 2,
     image: curso,
-    alt: "Logo da clínica",
-    url: "/events",
+    alt: "Logo do curso",
+    url: "/cursos",
   },
   {
     id: 3,
     image: curso,
-    alt: "Logo da clínica",
-    url: "/events",
+    alt: "Logo do curso",
+    url: "/cursos",
   },
 ];
 
@@ -52,13 +52,13 @@ export default function Header() {
                 e.stopPropagation(); // Impede que o Swiper capture o evento
               }}
             >
-              <div className="w-full md:h-[60rem] h-[23rem] flex justify-center items-center md:mt-16 mt-16">
+              <div className="w-full md:h-[60rem] h-[23rem] flex justify-center items-center md:mt-16 mt-16 ">
                 {" "}
                 {/* Define uma altura fixa */}
                 <img
                   src={slide.image.src}
                   alt={slide.alt}
-                  className="w-full h-full object-cover" // Para manter a proporção da imagem
+                  className="w-full h-full object-cover " // Para manter a proporção da imagem
                 />
               </div>
               <div className="absolute inset-0 flex flex-col items-start pl-4 sm:pl-8 md:pl-20 lg:pl-72 justify-center tracking-widest">
