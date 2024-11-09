@@ -7,7 +7,7 @@ import curso from "@/assets/curso.png";
 import Link from "next/link";
 import NavBar from "@/components/Navbar";
 import SliderBtns from "@/components/SliderBtns";
-import { ScrollFromTop } from "@/components/ScrollComponent";
+import { ScrollFadeIn } from "@/components/ScrollComponent";
 
 const slidesData = [
   {
@@ -34,7 +34,7 @@ export default function Header() {
   return (
     <>
       <NavBar />
-      <ScrollFromTop>
+      <ScrollFadeIn>
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
@@ -75,7 +75,7 @@ export default function Header() {
             iconsStyles={""}
           />
         </Swiper>
-      </ScrollFromTop>
+      </ScrollFadeIn>
     </>
   );
 }

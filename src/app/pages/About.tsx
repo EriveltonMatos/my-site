@@ -2,7 +2,11 @@ import React from "react";
 import { GraduationCap, Users, Clock } from "lucide-react";
 import agileAbout from "@/assets/agile-change-about.png";
 import Image from "next/image";
-import { ScrollFromLeft, ScrollFromRight } from "@/components/ScrollComponent";
+import {
+  ScrollFadeIn,
+  ScrollFromLeft,
+  ScrollFromRight,
+} from "@/components/ScrollComponent";
 
 export default function About() {
   const stats = [
@@ -96,7 +100,7 @@ export default function About() {
               <div className="absolute inset-0 bg-blue-100 rounded-lg transform translate-x-3 translate-y-3" />
 
               {/* Container da imagem */}
-              <ScrollFromRight>
+              <ScrollFadeIn>
                 <div className="relative bg-white p-3 rounded-lg shadow-lg">
                   <Image
                     src={agileAbout}
@@ -111,7 +115,7 @@ export default function About() {
                     </span>
                   </div>
                 </div>
-              </ScrollFromRight>
+              </ScrollFadeIn>
             </div>
           </div>
         </div>
