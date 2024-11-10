@@ -10,6 +10,7 @@ export interface Course {
   price: number;
   imageUrl: StaticImageData;
   featured: boolean;
+  url: string;
 }
 
 // data/courses.ts
@@ -25,6 +26,7 @@ export const courses: Course[] = [
     price: 997.0,
     imageUrl: agileAbout,
     featured: true,
+    url: "/curso-scrum",
   },
   {
     id: "2",
@@ -37,6 +39,7 @@ export const courses: Course[] = [
     price: 897.0,
     imageUrl: agileAbout,
     featured: false,
+    url: "/curso-scrum",
   },
   // Adicione mais cursos conforme necessário
 ];
@@ -111,9 +114,12 @@ export function CourseCardPage({ course }: CourseCardProps) {
         <span className="text-2xl font-bold text-blue-600">
           {formatPrice(course.price)}
         </span>
-        <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300">
+        <a
+          className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300"
+          href={course.url}
+        >
           Saiba Mais
-        </button>
+        </a>
       </CardFooter>
     </Card>
   );

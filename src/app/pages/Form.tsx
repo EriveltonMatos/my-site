@@ -1,9 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import agileContact from "@/assets/agile-change-contact.png";
 import Image from "next/image";
-import { section } from "framer-motion/client";
 import { Send } from "lucide-react";
+import agileContact from "@/assets/agile-change-contact.png";
 
 export default function Form() {
   const [formData, setFormData] = useState({
@@ -11,6 +10,9 @@ export default function Form() {
     email: "",
     message: "",
   });
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -22,22 +24,37 @@ export default function Form() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setStatus("loading");
 
-    // Crie o link "mailto" com os dados do formulário
-    const mailtoLink = `mailto:agilechangeconsultoria@gmail.com?subject=Mensagem de ${encodeURIComponent(
-      formData.name
-    )}&body=${encodeURIComponent(
-      `Nome: ${formData.name}\nEmail: ${formData.email}\n\nMensagem:\n${formData.message}`
-    )}`;
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Abre o link no cliente de email padrão
-    window.location.href = mailtoLink;
+      if (!response.ok) throw new Error("Falha ao enviar email");
+
+      setStatus("success");
+      setFormData({ name: "", email: "", message: "" });
+
+      // Reseta o status após 3 segundos
+      setTimeout(() => setStatus("idle"), 3000);
+    } catch (error) {
+      console.error("Erro:", error);
+      setStatus("error");
+
+      // Reseta o status após 3 segundos
+      setTimeout(() => setStatus("idle"), 3000);
+    }
   };
 
   return (
-    <section className="min-h-screen py-20 bg-gradient-to-b from-black via-blue-950 to-black">
+    <section className="py-20 bg-gradient-to-b from-black via-blue-950 to-black">
       <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto p-6 border rounded-2xl bg-[#0A0D31] border-primary">
         <div className="flex-1">
           <form
@@ -55,7 +72,7 @@ export default function Form() {
 
             <div className="space-y-6">
               <div className="relative">
-                <label className="absolute -top-2.5 left-2 bg-primary px-2 text-sm  rounded-lg text-gray-800 font-medium">
+                <label className="absolute -top-2.5 left-2 bg-primary px-2 text-sm rounded-lg text-gray-800 font-medium">
                   Nome
                 </label>
                 <input
@@ -97,11 +114,21 @@ export default function Form() {
 
               <button
                 type="submit"
-                className="group relative w-full overflow-hidden rounded-lg bg-gradient-to-r from-blue-500  to-primary p-px font-medium text-white shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/60"
+                disabled={status === "loading"}
+                className={`group relative w-full overflow-hidden rounded-lg bg-gradient-to-r from-blue-500 to-primary p-px font-medium text-white shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/60 ${
+                  status === "loading" ? "opacity-70 cursor-not-allowed" : ""
+                }`}
               >
                 <span className="relative flex items-center justify-center gap-2 rounded-lg bg-black/80 backdrop-blur-xl px-6 py-3 transition-all duration-300 group-hover:bg-black/60">
-                  <span>Enviar Mensagem</span>
-                  <Send className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                  {status === "loading" && "Enviando..."}
+                  {status === "success" && "Mensagem Enviada!"}
+                  {status === "error" && "Erro ao enviar"}
+                  {status === "idle" && (
+                    <>
+                      <span>Enviar Mensagem</span>
+                      <Send className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                    </>
+                  )}
                 </span>
               </button>
             </div>
@@ -110,7 +137,7 @@ export default function Form() {
         {/* Right Column - Image */}
         <div className="flex-1 hidden md:flex items-center justify-center">
           <Image
-            src={agileContact} // Add your image path here
+            src={agileContact}
             alt="Colaboração"
             className="max-w-md w-full object-contain"
           />

@@ -2,7 +2,8 @@
 import agileAbout from "@/assets/agile-change-about.png";
 
 import CourseCard from "@/components/CourseCard";
-import { Users } from "lucide-react";
+import { ScrollFadeIn, ScrollFromRight } from "@/components/ScrollComponent";
+import { BookOpen } from "lucide-react";
 import { StaticImageData } from "next/image";
 import { Carousel } from "primereact/carousel";
 
@@ -68,45 +69,49 @@ export default function Course() {
   return (
     <section className="bg-gradient-to-b from-blue-50 to-white py-16">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <div className="flex items-center justify-center mb-4">
-            <Users className="w-10 h-10 text-blue-600" />
+        <ScrollFadeIn>
+          <div className="text-center mb-12">
+            <div className="inline-block p-3 bg-blue-100 rounded-2xl mb-6">
+              <BookOpen className="w-10 h-10 text-blue-600" />
+            </div>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              NOSSOS CURSOS DE AGILIDADE
+            </h2>
+            <div className="w-24 h-1 bg-blue-600 mx-auto mb-8" />
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Transforme sua carreira com nossos cursos especializados em
+              metodologias ágeis
+            </p>
           </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Nossos Cursos de Agilidade
-          </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-8" />
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Transforme sua carreira com nossos cursos especializados em
-            metodologias ágeis
-          </p>
-        </div>
+        </ScrollFadeIn>
         {/* Carrossel do PrimeReact */}
-        <Carousel
-          value={MOCK_COURSES} // dados dos cursos
-          itemTemplate={courseTemplate} // função de template para renderizar cada card
-          numVisible={3} // número de cards visíveis ao mesmo tempo (ajuste conforme necessário)
-          numScroll={1} // número de cards que serão rolados por vez
-          circular // faz o carrossel circular
-          autoplayInterval={3000} // define a rotação automática (em milissegundos)
-          responsiveOptions={[
-            {
-              breakpoint: "1024px",
-              numVisible: 3,
-              numScroll: 1,
-            },
-            {
-              breakpoint: "768px",
-              numVisible: 2,
-              numScroll: 1,
-            },
-            {
-              breakpoint: "560px",
-              numVisible: 1,
-              numScroll: 1,
-            },
-          ]}
-        />
+        <ScrollFromRight>
+          <Carousel
+            value={MOCK_COURSES} // dados dos cursos
+            itemTemplate={courseTemplate} // função de template para renderizar cada card
+            numVisible={3} // número de cards visíveis ao mesmo tempo (ajuste conforme necessário)
+            numScroll={1} // número de cards que serão rolados por vez
+            circular // faz o carrossel circular
+            autoplayInterval={3000} // define a rotação automática (em milissegundos)
+            responsiveOptions={[
+              {
+                breakpoint: "1024px",
+                numVisible: 3,
+                numScroll: 1,
+              },
+              {
+                breakpoint: "768px",
+                numVisible: 2,
+                numScroll: 1,
+              },
+              {
+                breakpoint: "560px",
+                numVisible: 1,
+                numScroll: 1,
+              },
+            ]}
+          />
+        </ScrollFromRight>
       </div>
     </section>
   );
