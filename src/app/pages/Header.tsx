@@ -43,7 +43,7 @@ export default function Header() {
           speed={2500}
           effect="fade"
           modules={[Autoplay]}
-          className="w-full "
+          className="w-full md:h-screen mt-20 md:mt-0"
         >
           {slidesData.map((slide) => (
             <SwiperSlide key={slide.id}>
@@ -54,7 +54,7 @@ export default function Header() {
                   e.stopPropagation(); // Impede que o Swiper capture o evento
                 }}
               >
-                <div className="w-full md:h-[60rem] h-[23rem] flex justify-center items-center md:mt-16 mt-16 ">
+                <div className="w-full flex justify-center items-center ">
                   {" "}
                   {/* Define uma altura fixa */}
                   <img
@@ -71,7 +71,7 @@ export default function Header() {
           ))}
           <SliderBtns
             containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] z-20 w-full justify-between xl:justify-none"
-            btnStyles="bg-blue-300 hover:bg-blue-400 text-primary md:text-[44px] md:w-[66px] md:h-[66px] flex justify-center items-center transition-all"
+            btnStyles="bg-blue-600 hover:bg-blue-400 text-primary md:text-[44px] md:w-[66px] md:h-[66px] text-[30px] flex justify-center items-center transition-all"
             iconsStyles={""}
           />
         </Swiper>

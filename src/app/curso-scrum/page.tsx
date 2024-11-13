@@ -28,7 +28,7 @@ export default function CourseScrum() {
     students: 1234,
     rating: 4.8,
     instructor: {
-      name: "Ana Silva",
+      name: "Isaac Maciel",
       role: "Agile Coach Certificada",
       experience: "12 anos de experiência em metodologias ágeis",
     },

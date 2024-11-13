@@ -8,19 +8,19 @@ import { Award, BookOpen, LifeBuoy, Medal, Users } from "lucide-react";
 export default function Pillars() {
   const pillars = [
     {
-      icon: <Award className="w-10 h-10 " />,
-      title: "Consultoria",
-      description:
-        "Nossos especialistas atuam para entender suas necessidades e desenvolver soluções customizadas.",
-      modal: <Consultancy />,
-    },
-    {
       icon: <BookOpen className="w-10 h-10 " />,
       title: "Treinamento",
       description:
         "Oferecemos programas de capacitação para aprimorar as habilidades de sua equipe.",
       modal: <Training />,
     },
+    {
+      icon: <Award className="w-10 h-10 " />,
+      title: "Consultoria",
+      description:
+        "Nossos especialistas atuam para entender suas necessidades e desenvolver soluções customizadas.",
+      modal: <Consultancy />,
+    },   
     {
       icon: <LifeBuoy className="w-10 h-10 " />,
       title: "Mentoria",
@@ -31,7 +31,7 @@ export default function Pillars() {
   ];
 
   return (
-    <section className="py-20 bg-blue-900">
+    <section id="pilares" className="py-20 bg-blue-900">
       <div className="container mx-auto px-10 border p-20 rounded-3xl shadow-lg bg-slate-50">
         <ScrollFadeIn>
           <div className="max-w-4xl mx-auto text-center mb-16">

@@ -28,7 +28,7 @@ export default function About() {
   ];
 
   return (
-    <div className="bg-white py-16 mt-16">
+    <div id="sobre" className="bg-white py-16 mt-16" >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Container principal com borda */}
         <div className="relative border-2 border-blue-100 rounded-2xl p-8 md:p-12">
@@ -39,7 +39,7 @@ export default function About() {
           <div className="absolute w-4 h-4 bg-primary rounded-full -bottom-2 -right-2" />
 
           {/* Tag decorativa */}
-          <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-white px-4">
+          <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-white px-4 ">
             <span className="text-blue-600 font-medium text-xl">
               Nossa Missão
             </span>
@@ -49,7 +49,7 @@ export default function About() {
             <ScrollFromLeft>
               {/* Coluna de Texto */}
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-gray-900">
+                <h2 className="text-3xl font-bold text-gray-900 text-center md:text-start">
                   Transformação{" "}
                   <span className="text-blue-600">Empresarial</span>
                 </h2>
@@ -89,7 +89,9 @@ export default function About() {
                 </div>
 
                 <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
+                  <a href="/cursos">
                   Conheça nossos cursos
+                  </a>
                 </button>
               </div>
             </ScrollFromLeft>

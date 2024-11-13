@@ -16,6 +16,23 @@
   border-radius: 14px;
 }
 
+.rgb-button {
+  background: linear-gradient(45deg, #00008b, #00ced1, #00008b);
+  background-size: 600% 600%;
+  animation: gradient 5s ease infinite;
+}
+
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.btnStyles {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
 @layer base {
   html {
     @apply scroll-smooth;

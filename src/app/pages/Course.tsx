@@ -14,60 +14,79 @@ export interface Course {
   duration: string;
   level: string;
   image: StaticImageData;
-  price: number;
 }
 
 const MOCK_COURSES: Course[] = [
   {
-    id: "scrum-master",
-    title: "Formação Scrum Master",
+    id: "Projetos Ágeis",
+    title: "Gerenciamento de Projetos Ágeis com Scrum",
     description:
-      "Aprenda a liderar times ágeis e se torne um Scrum Master certificado. Curso completo com práticas e simulados.",
+      "Aprenda a gerenciar projetos de forma ágil e eficiente com o framework Scrum.",
     duration: "40 horas",
-    level: "Intermediário",
+    level: "Pré-Inscrição",
     image: agileAbout,
-    price: 597.0,
   },
   {
-    id: "product-owner",
-    title: "Product Owner Professional",
+    id: "OKRs",
+    title: "Planejamento Estratégico com OKRs",
     description:
-      "Desenvolva habilidades essenciais para gerenciar produtos digitais e maximizar valor para o negócio.",
+      "Aprenda a definir e implementar objetivos e resultados-chave para alavancar a performance da sua equipe.",
     duration: "35 horas",
-    level: "Avançado",
+    level: "Pré-Inscrição",
     image: agileAbout,
-    price: 697.0,
   },
   {
-    id: "kanban",
-    title: "Kanban: Do Básico ao Avançado",
+    id: "Gerenciamento de Projetos",
+    title: "Gerenciamento de Projetos",
     description:
-      "Aprenda a implementar e gerenciar sistemas Kanban para otimizar o fluxo de trabalho da sua equipe.",
+      "Aprenda a gerenciar projetos de forma eficiente e eficaz, garantindo a entrega de valor para o cliente.",
     duration: "25 horas",
-    level: "Básico",
+    level: "Pré-Inscrição",
     image: agileAbout,
-    price: 397.0,
   },
   {
-    id: "safe",
-    title: "SAFe Practitioner",
+    id: "Gestão de Riscos em Projetos",
+    title: "Gestão de Riscos em Projetos",
     description:
       "Domine o Scaled Agile Framework e aprenda a aplicar práticas ágeis em grande escala.",
     duration: "45 horas",
-    level: "Avançado",
+    level: "Pré-Inscrição",
     image: agileAbout,
-    price: 897.0,
+  },
+  {
+    id: "Power BI",
+    title: "Power BI  Teoria e Prática",
+    description:
+      "Domine Power BI e aprenda a criar dashboards e relatórios interativos para tomada de decisão.",
+    duration: "45 horas",
+    level: "Pré-Inscrição",
+    image: agileAbout,
+  },
+  {
+    id: "Introdução e Implementação de Inteligência Artificial",
+    title: "Introdução e Implementação de Inteligência Artificial",
+    description:
+      "Aprenda os conceitos fundamentais de IA e como implementar soluções práticas.",
+    duration: "45 horas",
+    level: "Pré-Inscrição",
+    image: agileAbout,
   },
 ];
 
 export default function Course() {
   // Template para renderizar cada curso como um card
   const courseTemplate = (course: Course) => {
-    return <CourseCard key={course.id} course={course} />;
+    return (
+      <div className="p-2">
+        {" "}
+        {/* padding horizontal */}
+        <CourseCard key={course.id} course={course} />
+      </div>
+    );
   };
 
   return (
-    <section className="bg-gradient-to-b from-blue-50 to-white py-16">
+    <section id="cursos" className="bg-gradient-to-b from-blue-50 to-white py-16">
       <div className="container mx-auto px-4">
         <ScrollFadeIn>
           <div className="text-center mb-12">
@@ -75,7 +94,7 @@ export default function Course() {
               <BookOpen className="w-10 h-10 text-blue-600" />
             </div>
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              NOSSOS CURSOS DE AGILIDADE
+              NOSSOS CURSOS
             </h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-8" />
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -86,6 +105,7 @@ export default function Course() {
         </ScrollFadeIn>
         {/* Carrossel do PrimeReact */}
         <ScrollFromRight>
+          <div>
           <Carousel
             value={MOCK_COURSES} // dados dos cursos
             itemTemplate={courseTemplate} // função de template para renderizar cada card
@@ -111,6 +131,7 @@ export default function Course() {
               },
             ]}
           />
+          </div>
         </ScrollFromRight>
       </div>
     </section>

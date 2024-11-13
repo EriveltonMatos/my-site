@@ -73,7 +73,7 @@ export default function Footer() {
             <ul className="space-y-4 text-blue-100">
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-blue-400" />
-                <span>contato@agilelearning.com.br</span>
+                <span>agilechangeconsultoria@gmail.com</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={20} className="text-blue-400" />
@@ -81,7 +81,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <MapPin size={20} className="text-blue-400" />
-                <span>São Paulo, SP</span>
+                <span>Fortaleza, CE</span>
               </li>
             </ul>
           </div>

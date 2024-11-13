@@ -54,7 +54,7 @@ export default function Form() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-black via-blue-950 to-black">
+    <section id="contato" className="py-20 bg-gradient-to-b from-black via-blue-950 to-black">
       <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto p-6 border rounded-2xl bg-[#0A0D31] border-primary">
         <div className="flex-1">
           <form

@@ -16,18 +16,23 @@ const NavBar: React.FC = () => {
       icon: <PlayCircle className="w-5 h-5 mr-2 text-[#24E1FC]" />,
     },
     {
-      href: "/sobre",
+      href: "#sobre",
       label: "Sobre",
       icon: <BookOpen className="w-5 h-5 mr-2 text-[#24E1FC]" />,
     },
     {
-      href: "/clientes",
-      label: "Clientes",
+      href: "#pilares",
+      label: "Pilares",
       icon: <BookOpen className="w-5 h-5 mr-2 text-[#24E1FC]" />,
     },
     {
-      href: "/conquistas",
-      label: "Conquistas",
+      href: "#clientes",
+      label: "Clientes",
+      icon: <Trophy className="w-5 h-5 mr-2 text-[#24E1FC]" />,
+    },
+    {
+      href: "#cursos",
+      label: "Cursos",
       icon: <Trophy className="w-5 h-5 mr-2 text-[#24E1FC]" />,
     },
   ];
@@ -67,7 +72,7 @@ const NavBar: React.FC = () => {
           ))}
 
           <Link
-            href="/matricula"
+            href="#contato"
             className="bg-[#24E1FC] hover:bg-blue-700 text-[#2E3A65] 
           px-6 py-2 rounded-full font-semibold 
           transition-colors duration-300 flex items-center shadow-lg shadow-blue-500/20 
