@@ -28,7 +28,7 @@ export default function About() {
   ];
 
   return (
-    <div id="sobre" className="bg-white py-16 mt-16" >
+    <div id="sobre" className="bg-white py-16 mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Container principal com borda */}
         <div className="relative border-2 border-blue-100 rounded-2xl p-8 md:p-12">
@@ -89,9 +89,7 @@ export default function About() {
                 </div>
 
                 <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
-                  <a href="/cursos">
-                  Conheça nossos cursos
-                  </a>
+                  <a href="/cursos">Conheça nossos cursos</a>
                 </button>
               </div>
             </ScrollFromLeft>

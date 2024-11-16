@@ -10,13 +10,13 @@ interface CourseCardProps {
 
 export default function CourseCard({ course }: CourseCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-lg transform transition duration-300  hover:shadow-xl p-2 border border-blue-200 group h-[500px] flex flex-col">
+    <div className="bg-white rounded-xl shadow-lg transform transition duration-300  hover:shadow-xl  border border-blue-200 group h-[500px] flex flex-col">
       <div className="relative h-64 w-full">
         <Image
           src={course.image}
           alt={course.title}
           layout="fill"
-          className="rounded-t-xl object-cover group-hover group-hover:scale-105 transform transition duration-300"
+          className="rounded-t-xl object-cover group-hover group-hover:scale-95 transform transition duration-300"
         />
       </div>
       <div className="p-3">

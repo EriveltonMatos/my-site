@@ -81,7 +81,9 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <MapPin size={20} className="text-blue-400" />
-                <span>Fortaleza, CE</span>
+                <span>
+                  AV WASHINGTON SOARES, 885 - Sala 1002, Fortaleza / CE
+                </span>
               </li>
             </ul>
           </div>
