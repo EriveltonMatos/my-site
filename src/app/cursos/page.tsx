@@ -3,6 +3,9 @@
 import { useState, useMemo } from "react";
 import { CourseCardPage, courses } from "@/components/CourseCardPage";
 import { CourseFilter } from "@/components/CourseFilter";
+import NavbarReturn from "@/components/NavbarReturn";
+import Contact from "../pages/Contact";
+import Footer from "../pages/Footer";
 
 export default function CoursesPage() {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -30,13 +33,14 @@ export default function CoursesPage() {
 
   return (
     <main className="min-h-screen bg-gray-50">
+      <NavbarReturn />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16 mt-20">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Nossos Cursos</h1>
           <p className="text-xl text-blue-100">
             Explore nossa seleção de cursos e transforme sua carreira em
-            agilidade
+            tecnologia
           </p>
         </div>
       </section>
@@ -78,6 +82,8 @@ export default function CoursesPage() {
           )}
         </div>
       </section>
+      <Contact />
+      <Footer />
     </main>
   );
 }

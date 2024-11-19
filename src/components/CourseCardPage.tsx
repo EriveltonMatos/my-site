@@ -1,4 +1,9 @@
-import agileAbout from "@/assets/agile-change-about.png";
+import gerenciamento from "@/assets/courses/gerenciamento.jpg";
+import okr from "@/assets/courses/okr.jpg";
+import scrum from "@/assets/courses/scrum.jpg";
+import risco from "@/assets/courses/risco.jpg";
+import power from "@/assets/courses/power.jpg";
+import ia from "@/assets/courses/ia.jpg";
 
 export interface Course {
   id: string;
@@ -7,7 +12,6 @@ export interface Course {
   category: "scrum" | "kanban" | "lean" | "safe" | "management";
   level: "iniciante" | "intermediario" | "avancado";
   duration: string;
-  price: number;
   imageUrl: StaticImageData;
   featured: boolean;
   url: string;
@@ -17,27 +21,73 @@ export interface Course {
 export const courses: Course[] = [
   {
     id: "1",
-    title: "Scrum Master Certified",
+    title: "Gerenciamento de Projetos Ágeis com Scrum",
     description:
-      "Aprenda os fundamentos do Scrum e se prepare para a certificação PSM I.",
+      "Aprenda a gerenciar projetos de forma ágil e eficiente com o framework Scrum.",
     category: "scrum",
     level: "iniciante",
     duration: "40 horas",
-    price: 997.0,
-    imageUrl: agileAbout,
+    imageUrl: scrum,
     featured: true,
     url: "/curso-scrum",
   },
   {
     id: "2",
-    title: "Kanban System Design",
+    title: "Planejamento Estratégico com OKRs",
     description:
-      "Domine o método Kanban e aprenda a otimizar o fluxo de trabalho.",
+      "Aprenda a definir e implementar objetivos e resultados-chave para alavancar a performance da sua equipe.",
     category: "kanban",
     level: "intermediario",
     duration: "30 horas",
-    price: 897.0,
-    imageUrl: agileAbout,
+    imageUrl: okr,
+    featured: false,
+    url: "/curso-okr",
+  },
+  {
+    id: "3",
+    title: "Gerenciamento de Projetos",
+    description:
+      "Aprenda a gerenciar projetos de forma eficiente e eficaz, garantindo a entrega de valor para o cliente.",
+    category: "kanban",
+    level: "intermediario",
+    duration: "30 horas",
+    imageUrl: gerenciamento,
+    featured: false,
+    url: "/curso-gerenciamento",
+  },
+  {
+    id: "4",
+    title: "Gestão de Riscos em Projetos",
+    description:
+      "Domine o Scaled Agile Framework e aprenda a aplicar práticas ágeis em grande escala.",
+    category: "kanban",
+    level: "intermediario",
+    duration: "30 horas",
+    imageUrl: risco,
+    featured: false,
+    url: "/curso-scrum",
+  },
+  {
+    id: "5",
+    title: "Power BI Teoria e Prática",
+    description:
+      "Domine Power BI e aprenda a criar dashboards e relatórios interativos para tomada de decisão.",
+    category: "kanban",
+    level: "intermediario",
+    duration: "30 horas",
+    imageUrl: power,
+    featured: false,
+    url: "/curso-scrum",
+  },
+  {
+    id: "6",
+    title: "Introdução e Implementação de Inteligência Artificial",
+    description:
+      "Aprenda os conceitos fundamentais de IA e como implementar soluções práticas.",
+    category: "kanban",
+    level: "intermediario",
+    duration: "30 horas",
+    imageUrl: ia,
     featured: false,
     url: "/curso-scrum",
   },
@@ -61,13 +111,6 @@ interface CourseCardProps {
 }
 
 export function CourseCardPage({ course }: CourseCardProps) {
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat("pt-BR", {
-      style: "currency",
-      currency: "BRL",
-    }).format(price);
-  };
-
   const getLevelColor = (level: Course["level"]) => {
     const colors = {
       iniciante: "bg-green-100 text-green-800",
@@ -85,16 +128,10 @@ export function CourseCardPage({ course }: CourseCardProps) {
           alt={course.title}
           className="w-full h-96 object-cover"
         />
-        {course.featured && (
-          <Badge className="absolute top-2 right-2 bg-blue-500">Destaque</Badge>
-        )}
       </div>
       <CardHeader>
         <div className="flex justify-between items-start">
           <CardTitle className="text-xl font-bold">{course.title}</CardTitle>
-          <Badge className={getLevelColor(course.level)}>
-            {course.level.charAt(0).toUpperCase() + course.level.slice(1)}
-          </Badge>
         </div>
         <CardDescription>{course.description}</CardDescription>
       </CardHeader>
@@ -111,9 +148,6 @@ export function CourseCardPage({ course }: CourseCardProps) {
         </div>
       </CardContent>
       <CardFooter className="flex justify-between items-center border-t pt-4">
-        <span className="text-2xl font-bold text-blue-600">
-          {formatPrice(course.price)}
-        </span>
         <a
           className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300"
           href={course.url}

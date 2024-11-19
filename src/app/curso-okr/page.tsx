@@ -18,11 +18,11 @@ import { ScrollFromBottom } from "@/components/ScrollComponent";
 import ClientsCarousel from "@/components/ClientsCarousel";
 import NavbarReturn from "@/components/NavbarReturn";
 
-export default function CourseScrum() {
+export default function CourseOkr() {
   const courseData = {
-    title: "Gerenciamento de Projetos Ágeis com Scrum",
+    title: "Planejamento Estratégico com OKRs",
     description:
-      "Aprenda a gerenciar projetos de forma ágil e eficiente com o framework Scrum.",
+      "A utilização de uma ferramenta atual para realização do Planejamento Estratégico das empresas tornou-se uma necessidade latente. O curso aborda a idealização, estruturação e modelo de construção de uma Planejamento Estratégico com foco em Objetivos e Resultados Chaves - OKRs.",
     duration: "32 horas",
     startDate: "15 de Dezembro, 2024",
     students: 1234,

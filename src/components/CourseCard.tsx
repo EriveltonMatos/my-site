@@ -30,7 +30,7 @@ export default function CourseCard({ course }: CourseCardProps) {
         <p className="text-gray-600 mb-4 line-clamp-2">{course.description}</p>
         <div className="flex items-center justify-center">
           <Link
-            href={`/cursos/${course.id}`}
+            href={`/${course.id}`}
             className="rgb-button text-white px-6 py-2 rounded-lg hover:scale-105 transition duration-300"
           >
             Inscreva-se agora!

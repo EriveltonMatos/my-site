@@ -1,5 +1,4 @@
 "use client";
-import agileAbout from "@/assets/agile-change-about.png";
 import gerenciamento from "@/assets/courses/gerenciamento.jpg";
 import okr from "@/assets/courses/okr.jpg";
 import scrum from "@/assets/courses/scrum.jpg";
@@ -24,7 +23,7 @@ export interface Course {
 
 const MOCK_COURSES: Course[] = [
   {
-    id: "Projetos Ágeis",
+    id: "curso-scrum",
     title: "Gerenciamento de Projetos Ágeis com Scrum",
     description:
       "Aprenda a gerenciar projetos de forma ágil e eficiente com o framework Scrum.",
@@ -33,7 +32,7 @@ const MOCK_COURSES: Course[] = [
     image: scrum,
   },
   {
-    id: "OKRs",
+    id: "curso-okr",
     title: "Planejamento Estratégico com OKRs",
     description:
       "Aprenda a definir e implementar objetivos e resultados-chave para alavancar a performance da sua equipe.",
@@ -42,7 +41,7 @@ const MOCK_COURSES: Course[] = [
     image: okr,
   },
   {
-    id: "Gerenciamento de Projetos",
+    id: "curso-gerenciamento",
     title: "Gerenciamento de Projetos",
     description:
       "Aprenda a gerenciar projetos de forma eficiente e eficaz, garantindo a entrega de valor para o cliente.",

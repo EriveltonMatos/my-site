@@ -18,11 +18,11 @@ import { ScrollFromBottom } from "@/components/ScrollComponent";
 import ClientsCarousel from "@/components/ClientsCarousel";
 import NavbarReturn from "@/components/NavbarReturn";
 
-export default function CourseScrum() {
+export default function CourseManagement() {
   const courseData = {
-    title: "Gerenciamento de Projetos Ágeis com Scrum",
+    title: "Gerenciamento de Projetos",
     description:
-      "Aprenda a gerenciar projetos de forma ágil e eficiente com o framework Scrum.",
+      "Este curso aborda técnicas para realização de uma Gestão de Projetos de forma produtiva, seja para projetos preditivos ou para projetos ágeis. O curso vai abordar temas que perpassam desde a concepção do projeto até a finalização deste.Serão discutidos: Planejamento, execução e finalização, sistemática de gestão por projetos preditivos e projetos ágeis, ferramentas de apoio a gestão, etc",
     duration: "32 horas",
     startDate: "15 de Dezembro, 2024",
     students: 1234,

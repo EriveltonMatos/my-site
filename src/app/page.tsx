@@ -18,8 +18,8 @@ export default function Home() {
       <Pillars />
       <Clients />
       <Contact />
-      <Feedback />
       <Course />
+      <Feedback />
       <Form />
       <Footer />
       <IconPhone />
