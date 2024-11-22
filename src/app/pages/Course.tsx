@@ -7,7 +7,7 @@ import power from "@/assets/courses/power.jpg";
 import ia from "@/assets/courses/ia.jpg";
 
 import CourseCard from "@/components/CourseCard";
-import { ScrollFadeIn, ScrollFromRight } from "@/components/ScrollComponent";
+import { ScrollFadeIn, ScrollFromLeft } from "@/components/ScrollComponent";
 import { BookOpen } from "lucide-react";
 import { StaticImageData } from "next/image";
 import { Carousel } from "primereact/carousel";
@@ -112,7 +112,7 @@ export default function Course() {
           </div>
         </ScrollFadeIn>
         {/* Carrossel do PrimeReact */}
-        <ScrollFromRight>
+        <ScrollFromLeft>
           <div>
             <Carousel
               value={MOCK_COURSES} // dados dos cursos
@@ -140,7 +140,7 @@ export default function Course() {
               ]}
             />
           </div>
-        </ScrollFromRight>
+        </ScrollFromLeft>
       </div>
     </section>
   );

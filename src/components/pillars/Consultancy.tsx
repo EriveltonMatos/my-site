@@ -35,7 +35,7 @@ export default function Consultancy() {
       <Dialog
         header="Header"
         visible={visible}
-        style={{ width: "50vw" }}
+        className="w-[90vw] md:w-[50vw]"
         onHide={() => {
           if (!visible) return;
           setVisible(false);
@@ -47,7 +47,7 @@ export default function Consultancy() {
               <Image
                 src={consultoria}
                 alt="Consultoria"
-                className="flex justify-center items-center"
+                className="flex justify-center items-center "
               />
             </div>
             <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">

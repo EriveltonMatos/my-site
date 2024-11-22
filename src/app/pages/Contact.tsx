@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { ScrollFadeIn } from "@/components/ScrollComponent";
 
 export default function Contact() {
   const phoneNumber = "5585997099171";
@@ -16,6 +17,7 @@ export default function Contact() {
         <div className="absolute -left-10 bottom-20 h-72 w-72 rounded-full bg-blue-50" />
       </div>
 
+      <ScrollFadeIn>
       <div className="relative z-10 mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
         {/* Seção CTA */}
         <div className="relative rounded-3xl bg-gradient-to-r from-indigo-600 to-blue-700 p-8 sm:p-12">
@@ -58,6 +60,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      </ScrollFadeIn>
     </div>
   );
 }

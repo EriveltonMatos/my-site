@@ -33,7 +33,7 @@ export default function Mentoring() {
       <Dialog
         header="Header"
         visible={visible}
-        style={{ width: "50vw" }}
+        className="w-[90vw] md:w-[50vw]"
         onHide={() => {
           if (!visible) return;
           setVisible(false);

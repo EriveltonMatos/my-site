@@ -7,6 +7,13 @@ import agileChange from "@/assets/agile-change-logo.png";
 import Image from "next/image";
 
 const NavBar: React.FC = () => {
+
+  const phoneNumber = "5585997099171";
+  const message = encodeURIComponent(
+    "Olá! Gostaria de mais informações sobre os treinamentos ou consultoria."
+  );
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
@@ -72,7 +79,7 @@ const NavBar: React.FC = () => {
           ))}
 
           <Link
-            href="#contato"
+            href={whatsappLink} target="_blank"
             className="bg-[#24E1FC] hover:bg-blue-700 text-[#2E3A65] 
           px-6 py-2 rounded-full font-semibold 
           transition-colors duration-300 flex items-center shadow-lg shadow-blue-500/20 

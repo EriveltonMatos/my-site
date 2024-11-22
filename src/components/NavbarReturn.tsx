@@ -9,7 +9,7 @@ export default function NavbarReturn() {
         <Image
           src={agileChange}
           alt="Agile Change Logo"
-          className="w-auto h-14"
+          className="w-auto md:h-14 h-12"
         />
         <a
           href="/"

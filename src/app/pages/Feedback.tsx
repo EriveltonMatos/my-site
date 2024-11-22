@@ -10,6 +10,7 @@ import {
   BookOpen,
 } from "lucide-react";
 import ash from "@/assets/ash.jpg";
+import { ScrollFromBottom, ScrollFromLeft, ScrollFromRight, ScrollFromTop } from "@/components/ScrollComponent";
 
 export default function Feedback() {
   const testimonials = [
@@ -134,6 +135,7 @@ export default function Feedback() {
 
       <div className="max-w-7xl mx-auto relative">
         {/* Animated Header Section */}
+        <ScrollFromBottom>
         <div className="text-center mb-16 relative">
           <div className="inline-block p-3 bg-blue-100 rounded-2xl mb-6">
             <BookOpen className="w-10 h-10 text-blue-600" />
@@ -146,9 +148,11 @@ export default function Feedback() {
             Depoimentos inspiradores de alunos que transformaram suas carreiras
           </p>
         </div>
+        </ScrollFromBottom>
 
         <div className="relative">
           {/* Cards Container */}
+          <ScrollFromLeft>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 transition-all duration-500">
             {getCurrentTestimonials().map((testimonial, idx) => (
               <div
@@ -234,6 +238,8 @@ export default function Feedback() {
               </div>
             ))}
           </div>
+          </ScrollFromLeft>
+
 
           {/* Navigation Buttons */}
           <div className="flex justify-center mt-12 gap-4">

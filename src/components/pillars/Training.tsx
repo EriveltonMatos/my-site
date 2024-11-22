@@ -35,7 +35,7 @@ export default function Training() {
       <Dialog
         header="Header"
         visible={visible}
-        style={{ width: "50vw" }}
+        className="w-[90vw] md:w-[50vw]"
         onHide={() => {
           if (!visible) return;
           setVisible(false);
@@ -43,11 +43,11 @@ export default function Training() {
       >
         <Card className="w-full shadow-xl rounded-xl overflow-hidden">
           <CardHeader className="text-center pb-2">
-            <div className="mb-6 flex justify-center items-center">
+            <div className="mb-6 flex justify-center items-center animate-fade">
               <Image
                 src={treinamento}
                 alt="Consultoria"
-                className="flex justify-center items-center"
+                className="flex justify-center items-center  "
               />
             </div>
             <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
