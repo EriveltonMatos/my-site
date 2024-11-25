@@ -10,27 +10,35 @@ import {
   BookOpen,
 } from "lucide-react";
 import ash from "@/assets/ash.jpg";
+import uendel from "@/assets/feedbacks/uendel.png";
+import juan from "@/assets/feedbacks/juan.png";
+import erivelton from "@/assets/feedbacks/erivelton.png";
+import livia from "@/assets/feedbacks/livia.png";
+import nai from "@/assets/feedbacks/nai.png";
+import gabriel from "@/assets/feedbacks/gabriel.png";
+
+
 import { ScrollFromBottom, ScrollFromLeft, ScrollFromRight, ScrollFromTop } from "@/components/ScrollComponent";
 
 export default function Feedback() {
   const testimonials = [
     {
       id: 1,
-      name: "Erivelton Matos",
+      name: "Erivelton Silva",
       role: "Fullstack Developer",
-      image: ash.src,
+      image: erivelton.src,
       stars: 5,
-      text: "Não confio meu aprendizado em BPM a qualquer instituição. Seleciono cuidadosamente quem irá me ajudar a crescer profissionalmente. A Agile Change me conquistou. Através do professor Isaac Maciel, senti total confiança e qualidade no conteúdo. A Agile Change me proporcionou uma experiência incrível, agregando muito conhecimento técnico em Gestão de Processos. Estrutura excelente, didática envolvente, turma engajada, conteúdo relevante e um professor altamente capacitado. E, claro, aquele café especial que faz toda a diferença! Até a próxima!",
-      company: "Tech Solutions",
+      text: "Eu sempre tive dificuldades em antecipar problemas nos projetos que gerencio, mas o curso de Gestão de Riscos em Projetos mudou completamente minha abordagem. Aprendi a identificar riscos potenciais, priorizá-los e criar estratégias claras para mitigá-los. Além disso, o instrutor trouxe exemplos práticos que fizeram toda a diferença para conectar a teoria com a realidade. Recomendo este curso para todos que querem minimizar imprevistos e ter mais controle sobre seus projetos.",
+      company: "Unichristus",
       badges: ["Top Student", "Project Master"],
     },
     {
       id: 2,
       name: "Uendel Martins",
       role: "Scrum Master",
-      image: ash.src,
+      image: uendel.src,
       stars: 5,
-      text: "Não confio meu aprendizado em BPM a qualquer instituição. Seleciono cuidadosamente quem irá me ajudar a crescer profissionalmente. A Agile Change me conquistou. Através do professor Isaac Maciel, senti total confiança e qualidade no conteúdo. A Agile Change me proporcionou uma experiência incrível, agregando muito conhecimento técnico em Gestão de Processos. Estrutura excelente, didática envolvente, turma engajada, conteúdo relevante e um professor altamente capacitado. E, claro, aquele café especial que faz toda a diferença! Até a próxima!",
+      text: "o curso de Gerenciamento de Projetos é uma experiência completa para quem quer dominar o gerenciamento de projetos do início ao fim. Ele abrange todas as etapas de forma detalhada, desde o planejamento inicial até a entrega final. O que mais gostei foi o equilíbrio entre teoria e prática, com exercícios e estudos de caso que me permitiram aplicar o aprendizado no meu trabalho. Agora me sinto muito mais preparado para liderar projetos com eficiência e atingir resultados consistentes.",
       company: "Inova Digital",
       badges: ["Agile Expert", "Team Leader"],
     },
@@ -38,39 +46,39 @@ export default function Feedback() {
       id: 3,
       name: "Juan Victor",
       role: "Product Owner",
-      image: ash.src,
+      image: juan.src,
       stars: 5,
-      text: "Não confio meu aprendizado em BPM a qualquer instituição. Seleciono cuidadosamente quem irá me ajudar a crescer profissionalmente. A Agile Change me conquistou. Através do professor Isaac Maciel, senti total confiança e qualidade no conteúdo. A Agile Change me proporcionou uma experiência incrível, agregando muito conhecimento técnico em Gestão de Processos. Estrutura excelente, didática envolvente, turma engajada, conteúdo relevante e um professor altamente capacitado. E, claro, aquele café especial que faz toda a diferença! Até a próxima!",
+      text: "Fantástico! Eu sempre quis aprender Power BI, mas achava que seria complicado demais. O curso me surpreendeu pela didática simples e pela forma como combina a teoria com exemplos práticos. Em pouco tempo, já consegui criar relatórios e dashboards profissionais que impressionaram minha equipe. Foi um grande diferencial na minha carreira, especialmente para análises mais detalhadas e apresentações estratégicas.",
       company: "Agile Corp",
       badges: ["Product Specialist", "Innovation Award"],
     },
     {
       id: 4,
-      name: "Pedro Oliveira",
+      name: "Livia Acácio",
       role: "Dev Lead",
-      image: ash.src,
+      image: livia.src,
       stars: 5,
-      text: "Não confio meu aprendizado em BPM a qualquer instituição. Seleciono cuidadosamente quem irá me ajudar a crescer profissionalmente. A Agile Change me conquistou. Através do professor Isaac Maciel, senti total confiança e qualidade no conteúdo. A Agile Change me proporcionou uma experiência incrível, agregando muito conhecimento técnico em Gestão de Processos. Estrutura excelente, didática envolvente, turma engajada, conteúdo relevante e um professor altamente capacitado. E, claro, aquele café especial que faz toda a diferença! Até a próxima!",
+      text: "O curso de Introdução e Implementação de Inteligência Artificial é incrível para quem quer entender e começar a trabalhar com inteligência artificial. Eu estava receoso por não ter muita experiência técnica, mas as explicações foram tão claras e os exemplos tão bem estruturados que consegui acompanhar tranquilamente. Além disso, o curso aborda não apenas conceitos, mas também como aplicá-los em projetos reais, o que foi essencial para minha evolução profissional.",
       company: "Dev Masters",
       badges: ["Tech Expert", "Best Practices"],
     },
     {
       id: 5,
-      name: "Julia Mendes",
+      name: "Naiara Coelho",
       role: "Agile Coach",
-      image: ash.src,
+      image: nai.src,
       stars: 5,
-      text: "Não confio meu aprendizado em BPM a qualquer instituição. Seleciono cuidadosamente quem irá me ajudar a crescer profissionalmente. A Agile Change me conquistou. Através do professor Isaac Maciel, senti total confiança e qualidade no conteúdo. A Agile Change me proporcionou uma experiência incrível, agregando muito conhecimento técnico em Gestão de Processos. Estrutura excelente, didática envolvente, turma engajada, conteúdo relevante e um professor altamente capacitado. E, claro, aquele café especial que faz toda a diferença! Até a próxima!",
+      text: "O curso de Gerenciamento de Projetos Ágeis com Scrum é perfeito para quem deseja adotar métodos ágeis em seus projetos. Eu já conhecia Scrum, mas nunca tinha entendido como aplicá-lo de forma eficiente no meu dia a dia. Com as explicações detalhadas e os exemplos práticos, ficou muito mais claro como estruturar sprints, lidar com o backlog e engajar a equipe para alcançar entregas contínuas. Vale muito a pena!",
       company: "Ágil Plus",
       badges: ["Coach Master", "Agile Expert"],
     },
     {
       id: 6,
-      name: "Ricardo Gomes",
+      name: "Gabriel Carvalho",
       role: "Tech Lead",
-      image: ash.src,
+      image: gabriel.src,
       stars: 5,
-      text: "Não confio meu aprendizado em BPM a qualquer instituição. Seleciono cuidadosamente quem irá me ajudar a crescer profissionalmente. A Agile Change me conquistou. Através do professor Isaac Maciel, senti total confiança e qualidade no conteúdo. A Agile Change me proporcionou uma experiência incrível, agregando muito conhecimento técnico em Gestão de Processos. Estrutura excelente, didática envolvente, turma engajada, conteúdo relevante e um professor altamente capacitado. E, claro, aquele café especial que faz toda a diferença! Até a próxima!",
+      text: "Eu sempre achei o conceito de OKRs interessante, mas tinha dificuldade em implementar na prática. Este curso foi um divisor de águas! Ele não só explica o que são os OKRs, mas também ensina passo a passo como definir metas claras e alinhá-las com os objetivos estratégicos da empresa. Após concluir o curso, consegui implementar a metodologia na minha equipe, e já estamos vendo resultados concretos na forma como acompanhamos nosso progresso.",
       company: "Next Tech",
       badges: ["Tech Leader", "Innovation Pro"],
     },
