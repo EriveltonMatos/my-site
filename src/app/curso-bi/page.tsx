@@ -18,11 +18,11 @@ import { ScrollFromBottom } from "@/components/ScrollComponent";
 import ClientsCarousel from "@/components/ClientsCarousel";
 import NavbarReturn from "@/components/NavbarReturn";
 
-export default function CourseManagement() {
+export default function CourseBI() {
   const courseData = {
-    title: "Gerenciamento de Projetos",
+    title: "Power BI Teoria e Prática",
     description:
-      "Este curso aborda técnicas para realização de uma Gestão de Projetos de forma produtiva, seja para projetos preditivos ou para projetos ágeis. O curso vai abordar temas que perpassam desde a concepção do projeto até a finalização deste.Serão discutidos: Planejamento, execução e finalização, sistemática de gestão por projetos preditivos e projetos ágeis, ferramentas de apoio a gestão, etc",
+      "A capacitação em Power BI tem o intuito de gerar conhecimentos para que se possa realizar a transformar dados brutos em insights visuais, promovendo a tomada de decisões informadas e estratégicas. Ao final deste curso, os alunos estarão aptos a explorar e analisar dados de forma eficaz, assim como gerar dashs para que sirvam de apoio à tomadas de decisões.",
     duration: "32 horas",
     startDate: "15 de Dezembro, 2024",
     students: 1234,
@@ -35,26 +35,64 @@ export default function CourseManagement() {
     modules: [
       {
         topics: [
-          "Iniciando o projeto",
-          "Análise de requisitos",
-          "Elaboração do termo de abertura do projeto",
-          "Escopo do projeto e estrutura analítica do projeto",
+          "Introdução ao Power BI",
+          "Download e Cadastro na Versão Gratuita do Power BI",
+          "Tipo de Licenças e Funcionalidade",
+          "Como realizar as atualizações de Versão",
+          "Apresentação de funcionalidades Power BI Desktop",
+          "Tipo de Tabelas",
+          "Apresentação de Conceitos BI",
         ],
       },
       {
         topics: [
-          "Elaboração de cronograma",
-          "Estimando os custos e elaborando o orçamento do projeto",
-          "Metodologia de Gestão de Projetos",
-          "Projetos Preditivos x Projetos Ágeis",
+          "Processo de Importação de Dados (Excel, arquivos de texto, planilha google sheet, pasta)",
+          "Prática de importação de dados",
+          "O que são relacionamento de dados e melhores práticas",
         ],
       },
       {
         topics: [
-          "Agendas e cerimônias de projetos",
-          "Status Report",
-          "Papéis e Responsabilidades",
-          "Artefatos",
+          "Tratamento de Dados (ETL) & Modelagem de Dados",
+          "Ambiente de tratamento de dados (ETL)",
+          "Tratamento de dados e Apresentação de possibilidade de tratamento de dados no Power BI",
+          "Modelagem de dados prática e conceitos",
+        ],
+      },
+      {
+        topics: [
+          "Como análise os dados existentes",
+          "Relacionamento entre os dados (tabelas) na prática",
+          "Formação de indicadores sobre os dados existentes",
+        ],
+      },
+      {
+        topics: [
+          "Conceitos básicos de Medidas DAX",
+          "Quais os ganho de Utilização de Medidas",
+          "Diferença entre Medida x Coluna calculada",
+          "Criação de Medidas (sum, max, min, Média, count, calculate, divide, if, swicth)",
+        ],
+      },
+      {
+        topics: [
+          "Principais visuais (gráficos) do Power BI",
+          "Formatação condicional",
+          "Visualizações interativas",
+          "Exercício práticos",
+        ],
+      },
+      {
+        topics: [
+          "Identidade visual",
+          "Como fazer a identidade visual (Power Point e Figma)",
+        ],
+      },
+      {
+        topics: [
+          "Publicação",
+          "Agendamento de Atualização",
+          "Detalhamento de Ambiente Web (Workspaces, Acesso, tipo de compartilhamento)",
         ],
       },
     ],
@@ -335,7 +373,7 @@ export default function CourseManagement() {
           <div className="bg-white py-16">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl font-bold text-center mb-12">
-                NOSSOS PRINCIPAIS CLIENTES
+                NOSSO PRINCIPAIS CLIENTES
               </h2>
               <div className="relative">
                 <div className="absolute -inset-4 bg-blue-600/5 rounded-2xl transform rotate-1" />

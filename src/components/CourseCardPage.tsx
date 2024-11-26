@@ -65,7 +65,7 @@ export const courses: Course[] = [
     duration: "30 horas",
     imageUrl: risco,
     featured: false,
-    url: "/curso-scrum",
+    url: "/curso-riscos",
   },
   {
     id: "5",
@@ -77,7 +77,7 @@ export const courses: Course[] = [
     duration: "30 horas",
     imageUrl: power,
     featured: false,
-    url: "/curso-scrum",
+    url: "/curso-bi",
   },
   {
     id: "6",
@@ -89,7 +89,7 @@ export const courses: Course[] = [
     duration: "30 horas",
     imageUrl: ia,
     featured: false,
-    url: "/curso-scrum",
+    url: "/curso-ia",
   },
   // Adicione mais cursos conforme necessário
 ];
@@ -103,7 +103,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 
 interface CourseCardProps {

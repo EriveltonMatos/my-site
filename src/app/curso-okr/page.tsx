@@ -34,30 +34,44 @@ export default function CourseOkr() {
     },
     modules: [
       {
-        title: "Fundamentos do Scrum",
         topics: [
-          "Teoria do Scrum",
-          "Papéis e Responsabilidades",
-          "Eventos Scrum",
-          "Artefatos",
+          "Contexto em que vivemos",
+          "A história dos OKRs",
+          "O que é OKR?",
+          "Características dos OKRs",
         ],
       },
       {
-        title: "Liderança Ágil",
         topics: [
-          "Facilitação de Reuniões",
-          "Resolução de Conflitos",
-          "Coaching Ágil",
-          "Métricas Ágeis",
+          "Alinhamento Organizacional",
+          "Criando OKRs poderosos",
+          "Modelos de Alinhamento",
+          "Alinhamento Vertical",
+          "Alinhamento Horizontal",
         ],
       },
       {
-        title: "Práticas Avançadas",
         topics: [
-          "Escalando Scrum",
-          "DevOps e Agilidade",
-          "Transformação Ágil",
-          "Estudos de Caso",
+          "Diferenças entre OKR x BSC",
+          "OKRs em Diferentes Abordagens",
+          "OKRs para produtos",
+          "OKRs e Gestão de Pessoas",
+          "Lições Aprendidas em OKR",
+        ],
+      },
+      {
+        topics: [
+          "Pilares Estratégicos",
+          "Contexto da Gestão de Mudanças",
+          "Metodologias de Gestão da Mudança",
+        ],
+      },
+      {
+        topics: [
+          "Cadência dos OKRs",
+          "Papéis e responsáveis dos OKRs",
+          "Pontuando (scoring) OKRs",
+          "Monitorando o progresso de OKRs",
         ],
       },
     ],
@@ -188,7 +202,7 @@ export default function CourseOkr() {
                     className="border-b border-gray-200 pb-6 last:border-0 last:pb-0"
                   >
                     <h3 className="text-xl font-semibold mb-4">
-                      Módulo {index + 1}: {module.title}
+                      Módulo {index + 1}:
                     </h3>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       {module.topics.map((topic, topicIndex) => (
@@ -338,7 +352,7 @@ export default function CourseOkr() {
           <div className="bg-white py-16">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl font-bold text-center mb-12">
-                EMPRESAS QUE CONTRATAM NOSSOS ALUNOS
+                NOSSOS PRINCIPAIS CLIENTES
               </h2>
               <div className="relative">
                 <div className="absolute -inset-4 bg-blue-600/5 rounded-2xl transform rotate-1" />

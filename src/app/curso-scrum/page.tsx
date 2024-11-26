@@ -22,7 +22,7 @@ export default function CourseScrum() {
   const courseData = {
     title: "Gerenciamento de Projetos Ágeis com Scrum",
     description:
-      "Aprenda a gerenciar projetos de forma ágil e eficiente com o framework Scrum.",
+      "Este curso aborda técnicas para realização de uma Gestão de Projetos utilizando o framework Scum com pilar nesse modelo de gestão. O foco em uma ferramenta ágil vai trazer insigths para imergir no mundo da agilidade. O curso vai abordar temas que perpassam desde a construção do backlog do projeto até a finalização deste. Serão discutidos: Planejamento, execução e finalização, sistemática de gestão por projetos preditivos e projetos ágeis, ferramentas de apoio a gestão, etc",
     duration: "32 horas",
     startDate: "15 de Dezembro, 2024",
     students: 1234,
@@ -34,30 +34,34 @@ export default function CourseScrum() {
     },
     modules: [
       {
-        title: "Fundamentos do Scrum",
         topics: [
-          "Teoria do Scrum",
+          "O que é Agilidade",
+          "Metodologias, métodos e ferramentas ágeis",
+          "O manifesto ágil",
+        ],
+      },
+      {
+        topics: [
+          "Framework Scrum",
+          "O scrum guide",
+          "Benefícios do Kanban atrelados ao Scrum",
           "Papéis e Responsabilidades",
-          "Eventos Scrum",
-          "Artefatos",
+          "Cerimônias no Scrum",
         ],
       },
       {
-        title: "Liderança Ágil",
         topics: [
-          "Facilitação de Reuniões",
-          "Resolução de Conflitos",
-          "Coaching Ágil",
-          "Métricas Ágeis",
+          "Iniciando o projeto x Concepção de necessidade",
+          "Análise de requisitos x Discovery",
+          "Elaboração do termo de abertura do projeto x Estruturação do projeto em ferramentas ágeis",
+          "Escopo do projeto e estrutura analítica do projeto x Backlog do projeto",
         ],
       },
       {
-        title: "Práticas Avançadas",
         topics: [
-          "Escalando Scrum",
-          "DevOps e Agilidade",
-          "Transformação Ágil",
-          "Estudos de Caso",
+          "Elaboração de cronograma x Visão por roadmap",
+          "Identificação de riscos x Mapeamento de dependências",
+          "Análise qualitativa de riscos",
         ],
       },
     ],
@@ -188,7 +192,7 @@ export default function CourseScrum() {
                     className="border-b border-gray-200 pb-6 last:border-0 last:pb-0"
                   >
                     <h3 className="text-xl font-semibold mb-4">
-                      Módulo {index + 1}: {module.title}
+                      Módulo {index + 1}:
                     </h3>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       {module.topics.map((topic, topicIndex) => (
@@ -338,7 +342,7 @@ export default function CourseScrum() {
           <div className="bg-white py-16">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl font-bold text-center mb-12">
-                EMPRESAS QUE CONTRATAM NOSSOS ALUNOS
+                NOSSOS PRINCIPAIS CLIENTES
               </h2>
               <div className="relative">
                 <div className="absolute -inset-4 bg-blue-600/5 rounded-2xl transform rotate-1" />

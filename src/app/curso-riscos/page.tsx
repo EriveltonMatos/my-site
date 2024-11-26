@@ -18,11 +18,11 @@ import { ScrollFromBottom } from "@/components/ScrollComponent";
 import ClientsCarousel from "@/components/ClientsCarousel";
 import NavbarReturn from "@/components/NavbarReturn";
 
-export default function CourseManagement() {
+export default function CourseRisc() {
   const courseData = {
-    title: "Gerenciamento de Projetos",
+    title: "Gestão de Riscos em Projetos",
     description:
-      "Este curso aborda técnicas para realização de uma Gestão de Projetos de forma produtiva, seja para projetos preditivos ou para projetos ágeis. O curso vai abordar temas que perpassam desde a concepção do projeto até a finalização deste.Serão discutidos: Planejamento, execução e finalização, sistemática de gestão por projetos preditivos e projetos ágeis, ferramentas de apoio a gestão, etc",
+      "Realizar a Gestão de Riscos em Projetos atualmente tornou-se fundamental para realização de mitigação falhas ou intercorrências. Neste treinamento, abordaremos estratégias de como utilizar a gestão de riscos à favor dos Gerentes de Projetos ou Stakeholders. Ao final deste curso, os alunos estarão aptos a identificar, analisar e criar planos de ação para mitigar estes riscos.",
     duration: "32 horas",
     startDate: "15 de Dezembro, 2024",
     students: 1234,
@@ -35,26 +35,30 @@ export default function CourseManagement() {
     modules: [
       {
         topics: [
-          "Iniciando o projeto",
-          "Análise de requisitos",
-          "Elaboração do termo de abertura do projeto",
-          "Escopo do projeto e estrutura analítica do projeto",
+          "Contexto histórico",
+          "Projetos e Incertezas",
+          "História, definição, categoria e tolerância aos Riscos;",
         ],
       },
       {
         topics: [
-          "Elaboração de cronograma",
-          "Estimando os custos e elaborando o orçamento do projeto",
-          "Metodologia de Gestão de Projetos",
-          "Projetos Preditivos x Projetos Ágeis",
+          "Gerenciamento de Riscos (definição e processos)",
+          "Planejamento do gerenciamento de Riscos",
+          "Identificação de Riscos",
         ],
       },
       {
         topics: [
-          "Agendas e cerimônias de projetos",
-          "Status Report",
-          "Papéis e Responsabilidades",
-          "Artefatos",
+          "Análise de Riscos",
+          "Planejamento das respostas aos Riscos",
+          "Monitoramento do controle de Riscos.",
+        ],
+      },
+      {
+        topics: [
+            "Como gerir riscos nas prática",
+            "Ferramentas de gestão de riscos",
+            "Ciclos de feedback e gestão de riscos",
         ],
       },
     ],
@@ -185,7 +189,7 @@ export default function CourseManagement() {
                     className="border-b border-gray-200 pb-6 last:border-0 last:pb-0"
                   >
                     <h3 className="text-xl font-semibold mb-4">
-                      Módulo {index + 1}:
+                      Módulo {index + 1}: 
                     </h3>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       {module.topics.map((topic, topicIndex) => (

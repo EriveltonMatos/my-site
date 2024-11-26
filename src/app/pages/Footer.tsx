@@ -73,7 +73,7 @@ export default function Footer() {
             <ul className="space-y-4 text-blue-100">
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-blue-400" />
-                <span>agilechangeconsultoria@gmail.com</span>
+                <span>contato@agilechangeconsultoria.com.br</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={20} className="text-blue-400" />

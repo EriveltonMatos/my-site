@@ -18,11 +18,11 @@ import { ScrollFromBottom } from "@/components/ScrollComponent";
 import ClientsCarousel from "@/components/ClientsCarousel";
 import NavbarReturn from "@/components/NavbarReturn";
 
-export default function CourseManagement() {
+export default function CourseAI() {
   const courseData = {
-    title: "Gerenciamento de Projetos",
+    title: "Introdução e Implementação de Inteligência Artificial",
     description:
-      "Este curso aborda técnicas para realização de uma Gestão de Projetos de forma produtiva, seja para projetos preditivos ou para projetos ágeis. O curso vai abordar temas que perpassam desde a concepção do projeto até a finalização deste.Serão discutidos: Planejamento, execução e finalização, sistemática de gestão por projetos preditivos e projetos ágeis, ferramentas de apoio a gestão, etc",
+      "Este treinamento tem o intuito de proporcionar aos participantes uma compreensão fundamental sobre o que é IA, suas principais aplicações e como ela está transformando diversos setores. Ao final do treinamento, os alunos irão aprender sobre conceitos e fundamentos de IA, principais técnicas e ferramentas e o processo de análise de dados para que haja uma boa aplicação da IA.",
     duration: "32 horas",
     startDate: "15 de Dezembro, 2024",
     students: 1234,
@@ -35,26 +35,39 @@ export default function CourseManagement() {
     modules: [
       {
         topics: [
-          "Iniciando o projeto",
-          "Análise de requisitos",
-          "Elaboração do termo de abertura do projeto",
-          "Escopo do projeto e estrutura analítica do projeto",
+          "Conceitos Básicos de IA",
+          "Introdução à Inteligência Artificial, Machine Learning, e Deep Learning",
+          "Estudos de caso de aplicações em diferentes setores",
+          "Como a IA pode apoiar a tomada de decisão e promove eficiência",
+          "Identificação de Oportunidades para IA",
+          "Mapeamento de áreas que podem se beneficiar da IA",
+          "Priorização de projetos: Avaliando impacto no negócio e viabilidade técnica",
         ],
       },
       {
         topics: [
-          "Elaboração de cronograma",
-          "Estimando os custos e elaborando o orçamento do projeto",
-          "Metodologia de Gestão de Projetos",
-          "Projetos Preditivos x Projetos Ágeis",
+          "Definição de Objetivos e Métricas do Projeto",
+          "Estabelecimento de objetivos claros e mensuráveis",
+          "Exemplos práticos: Como definir objetivos de IA para prever demanda ou melhorar a cadeia de suprimentos",
+          "Fundamentos do Desenvolvimento de Modelos",
+          "Preparação e coleta de dados: desafios e boas práticas",
+          "Seleção de algoritmos e construção do fluxo de modelagem",
+          "Validação e Avaliação de Modelos",
         ],
       },
       {
         topics: [
-          "Agendas e cerimônias de projetos",
-          "Status Report",
-          "Papéis e Responsabilidades",
-          "Artefatos",
+          "Implantação do Modelo de IA",
+          "Estrutura necessária para colocar o modelo em produção",
+          "Práticas de implementação e as ferramentas mais usadas",
+        ],
+      },
+      {
+        topics: [
+          "Monitoramento e Ajuste de KPIs",
+          "Estabelecimento e monitoramento de KPIs para acompanhar o desempenho da IA em produção",
+          "Ciclo de feedback para ajuste e manutenção do modelo",
+          "Hands-On: Definição de KPIs e Plano de Monitoramento",
         ],
       },
     ],
