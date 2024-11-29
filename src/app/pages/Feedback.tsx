@@ -58,7 +58,7 @@ export default function Feedback() {
       role: "Dev Lead",
       image: livia.src,
       stars: 5,
-      text: "O curso de Introdução e Implementação de Inteligência Artificial é incrível para quem quer entender e começar a trabalhar com inteligência artificial. Eu estava receoso por não ter muita experiência técnica, mas as explicações foram tão claras e os exemplos tão bem estruturados que consegui acompanhar tranquilamente. Além disso, o curso aborda não apenas conceitos, mas também como aplicá-los em projetos reais, o que foi essencial para minha evolução profissional.",
+      text: "O curso de Introdução e Implementação de Inteligência Artificial é incrível para quem quer entender e começar a trabalhar com inteligência artificial. Eu estava receosa por não ter muita experiência técnica, mas as explicações foram tão claras e os exemplos tão bem estruturados que consegui acompanhar tranquilamente. Além disso, o curso aborda não apenas conceitos, mas também como aplicá-los em projetos reais, o que foi essencial para minha evolução profissional.",
       company: "Dev Masters",
       badges: ["Tech Expert", "Best Practices"],
     },

@@ -9,8 +9,7 @@ export interface Course {
   id: string;
   title: string;
   description: string;
-  category: "scrum" | "kanban" | "lean" | "safe" | "management";
-  level: "iniciante" | "intermediario" | "avancado";
+  category: "agilidade" | "inteligência Artificial" | "dados";
   duration: string;
   imageUrl: StaticImageData;
   featured: boolean;
@@ -24,9 +23,8 @@ export const courses: Course[] = [
     title: "Gerenciamento de Projetos Ágeis com Scrum",
     description:
       "Aprenda a gerenciar projetos de forma ágil e eficiente com o framework Scrum.",
-    category: "scrum",
-    level: "iniciante",
-    duration: "40 horas",
+    category: "agilidade",
+    duration: "20 horas",
     imageUrl: scrum,
     featured: true,
     url: "/curso-scrum",
@@ -36,9 +34,8 @@ export const courses: Course[] = [
     title: "Planejamento Estratégico com OKRs",
     description:
       "Aprenda a definir e implementar objetivos e resultados-chave para alavancar a performance da sua equipe.",
-    category: "kanban",
-    level: "intermediario",
-    duration: "30 horas",
+    category: "agilidade",
+    duration: "20 horas",
     imageUrl: okr,
     featured: false,
     url: "/curso-okr",
@@ -48,9 +45,8 @@ export const courses: Course[] = [
     title: "Gerenciamento de Projetos",
     description:
       "Aprenda a gerenciar projetos de forma eficiente e eficaz, garantindo a entrega de valor para o cliente.",
-    category: "kanban",
-    level: "intermediario",
-    duration: "30 horas",
+    category: "agilidade",
+    duration: "20 horas",
     imageUrl: gerenciamento,
     featured: false,
     url: "/curso-gerenciamento",
@@ -60,9 +56,8 @@ export const courses: Course[] = [
     title: "Gestão de Riscos em Projetos",
     description:
       "Domine o Scaled Agile Framework e aprenda a aplicar práticas ágeis em grande escala.",
-    category: "kanban",
-    level: "intermediario",
-    duration: "30 horas",
+    category: "agilidade",
+    duration: "20 horas",
     imageUrl: risco,
     featured: false,
     url: "/curso-riscos",
@@ -72,9 +67,8 @@ export const courses: Course[] = [
     title: "Power BI Teoria e Prática",
     description:
       "Domine Power BI e aprenda a criar dashboards e relatórios interativos para tomada de decisão.",
-    category: "kanban",
-    level: "intermediario",
-    duration: "30 horas",
+    category: "dados",
+    duration: "20 horas",
     imageUrl: power,
     featured: false,
     url: "/curso-bi",
@@ -84,9 +78,8 @@ export const courses: Course[] = [
     title: "Introdução e Implementação de Inteligência Artificial",
     description:
       "Aprenda os conceitos fundamentais de IA e como implementar soluções práticas.",
-    category: "kanban",
-    level: "intermediario",
-    duration: "30 horas",
+    category: "inteligência Artificial",
+    duration: "16 horas",
     imageUrl: ia,
     featured: false,
     url: "/curso-ia",
@@ -110,14 +103,6 @@ interface CourseCardProps {
 }
 
 export function CourseCardPage({ course }: CourseCardProps) {
-  const getLevelColor = (level: Course["level"]) => {
-    const colors = {
-      iniciante: "bg-green-100 text-green-800",
-      intermediario: "bg-yellow-100 text-yellow-800",
-      avancado: "bg-red-100 text-red-800",
-    };
-    return colors[level];
-  };
 
   return (
     <Card className="flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300">

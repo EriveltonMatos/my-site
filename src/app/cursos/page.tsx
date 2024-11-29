@@ -9,27 +9,22 @@ import Footer from "../pages/Footer";
 
 export default function CoursesPage() {
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [selectedLevel, setSelectedLevel] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
 
   const categories = [...new Set(courses.map((course) => course.category))];
-  const levels = [...new Set(courses.map((course) => course.level))];
 
   const filteredCourses = useMemo(() => {
     return courses.filter((course) => {
       const matchesCategory = selectedCategory
         ? course.category === selectedCategory
         : true;
-      const matchesLevel = selectedLevel
-        ? course.level === selectedLevel
-        : true;
       const matchesSearch =
         course.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         course.description.toLowerCase().includes(searchQuery.toLowerCase());
 
-      return matchesCategory && matchesLevel && matchesSearch;
+      return matchesCategory && matchesSearch;
     });
-  }, [selectedCategory, selectedLevel, searchQuery]);
+  }, [selectedCategory, searchQuery]);
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -59,11 +54,8 @@ export default function CoursesPage() {
           </div>
           <CourseFilter
             categories={categories}
-            levels={levels}
             selectedCategory={selectedCategory}
-            selectedLevel={selectedLevel}
             onCategoryChange={setSelectedCategory}
-            onLevelChange={setSelectedLevel}
           />
         </div>
 
