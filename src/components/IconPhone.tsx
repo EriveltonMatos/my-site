@@ -5,7 +5,7 @@ export default function IconPhone() {
   const phoneNumber = "5585997099171";
   // Mensagem opcional pré-definida (codificada para URL)
   const message = encodeURIComponent(
-    "Olá! Gostaria de mais informações sobre os cursos."
+    "Olá! Gostaria de mais informações sobre os treinamentos ou consultoria."
   );
 
   // Link para web e dispositivos móveis

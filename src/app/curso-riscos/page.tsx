@@ -19,13 +19,18 @@ import ClientsCarousel from "@/components/ClientsCarousel";
 import NavbarReturn from "@/components/NavbarReturn";
 
 export default function CourseRisc() {
+
+  const phoneNumber = "5585997099171";
+  const message = encodeURIComponent(
+    "Olá! Gostaria de mais informações sobre o curso de Gestão de Riscos em Projetos"
+  );
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+
   const courseData = {
     title: "Gestão de Riscos em Projetos",
     description:
       "Realizar a Gestão de Riscos em Projetos atualmente tornou-se fundamental para realização de mitigação falhas ou intercorrências. Neste treinamento, abordaremos estratégias de como utilizar a gestão de riscos à favor dos Gerentes de Projetos ou Stakeholders. Ao final deste curso, os alunos estarão aptos a identificar, analisar e criar planos de ação para mitigar estes riscos.",
-    duration: "32 horas",
-    startDate: "15 de Dezembro, 2024",
-    students: 1234,
+    duration: "20 horas",
     rating: 4.8,
     instructor: {
       name: "Isaac Maciel",
@@ -133,21 +138,15 @@ export default function CourseRisc() {
               <span>{courseData.duration}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Calendar className="w-5 h-5" />
-              <span>Início: {courseData.startDate}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Users className="w-5 h-5" />
-              <span>{courseData.students} alunos</span>
-            </div>
-            <div className="flex items-center gap-2">
               <Star className="w-5 h-5 fill-current" />
               <span>{courseData.rating} de avaliação</span>
             </div>
           </div>
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
           <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-            Matricular-se agora!
+            Matricule-se agora!
           </button>
+          </a>
         </div>
       </div>
 
@@ -227,9 +226,11 @@ export default function CourseRisc() {
                 </div>
               </div>
               <div className="mt-8">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                   Matricule-se agora!
                 </button>
+              </a>
               </div>
             </div>
           </div>
@@ -368,9 +369,11 @@ export default function CourseRisc() {
               Junte-se a milhares de profissionais que transformaram suas
               carreiras com nossa certificação
             </p>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
             <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-              Matricular-se agora!
+              Matricule-se agora!
             </button>
+            </a>
           </div>
         </div>
       </div>

@@ -50,7 +50,7 @@ const MOCK_COURSES: Course[] = [
     image: gerenciamento,
   },
   {
-    id: "Gestão de Riscos em Projetos",
+    id: "curso-riscos",
     title: "Gestão de Riscos em Projetos",
     description:
       "Domine o Scaled Agile Framework e aprenda a aplicar práticas ágeis em grande escala.",
@@ -59,7 +59,7 @@ const MOCK_COURSES: Course[] = [
     image: risco,
   },
   {
-    id: "Power BI",
+    id: "curso-bi",
     title: "Power BI  Teoria e Prática",
     description:
       "Domine Power BI e aprenda a criar dashboards e relatórios interativos para tomada de decisão.",
@@ -68,7 +68,7 @@ const MOCK_COURSES: Course[] = [
     image: power,
   },
   {
-    id: "Introdução e Implementação de Inteligência Artificial",
+    id: "curso-ia",
     title: "Introdução e Implementação de Inteligência Artificial",
     description:
       "Aprenda os conceitos fundamentais de IA e como implementar soluções práticas.",

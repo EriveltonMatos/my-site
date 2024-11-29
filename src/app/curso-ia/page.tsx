@@ -19,13 +19,18 @@ import ClientsCarousel from "@/components/ClientsCarousel";
 import NavbarReturn from "@/components/NavbarReturn";
 
 export default function CourseAI() {
+
+  const phoneNumber = "5585997099171";
+  const message = encodeURIComponent(
+    "Olá! Gostaria de mais informações sobre o curso de Introdução e Implementação de Inteligência Artificial"
+  );
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+
   const courseData = {
     title: "Introdução e Implementação de Inteligência Artificial",
     description:
       "Este treinamento tem o intuito de proporcionar aos participantes uma compreensão fundamental sobre o que é IA, suas principais aplicações e como ela está transformando diversos setores. Ao final do treinamento, os alunos irão aprender sobre conceitos e fundamentos de IA, principais técnicas e ferramentas e o processo de análise de dados para que haja uma boa aplicação da IA.",
-    duration: "32 horas",
-    startDate: "15 de Dezembro, 2024",
-    students: 1234,
+    duration: "16 horas",
     rating: 4.8,
     instructor: {
       name: "Isaac Maciel",
@@ -142,21 +147,15 @@ export default function CourseAI() {
               <span>{courseData.duration}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Calendar className="w-5 h-5" />
-              <span>Início: {courseData.startDate}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Users className="w-5 h-5" />
-              <span>{courseData.students} alunos</span>
-            </div>
-            <div className="flex items-center gap-2">
               <Star className="w-5 h-5 fill-current" />
               <span>{courseData.rating} de avaliação</span>
             </div>
           </div>
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
           <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-            Matricular-se agora!
+            Matricule-se agora!
           </button>
+          </a>
         </div>
       </div>
 
@@ -236,9 +235,11 @@ export default function CourseAI() {
                 </div>
               </div>
               <div className="mt-8">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                   Matricule-se agora!
                 </button>
+                </a>
               </div>
             </div>
           </div>
@@ -377,9 +378,11 @@ export default function CourseAI() {
               Junte-se a milhares de profissionais que transformaram suas
               carreiras com nossa certificação
             </p>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
             <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-              Matricular-se agora!
+              Matricule-se agora!
             </button>
+            </a>
           </div>
         </div>
       </div>

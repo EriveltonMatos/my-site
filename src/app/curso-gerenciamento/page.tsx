@@ -19,12 +19,18 @@ import ClientsCarousel from "@/components/ClientsCarousel";
 import NavbarReturn from "@/components/NavbarReturn";
 
 export default function CourseManagement() {
+
+  const phoneNumber = "5585997099171";
+  const message = encodeURIComponent(
+    "Olá! Gostaria de mais informações sobre o curso de Gerenciamento de Projetos"
+  );
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+
   const courseData = {
     title: "Gerenciamento de Projetos",
     description:
       "Este curso aborda técnicas para realização de uma Gestão de Projetos de forma produtiva, seja para projetos preditivos ou para projetos ágeis. O curso vai abordar temas que perpassam desde a concepção do projeto até a finalização deste.Serão discutidos: Planejamento, execução e finalização, sistemática de gestão por projetos preditivos e projetos ágeis, ferramentas de apoio a gestão, etc",
-    duration: "32 horas",
-    startDate: "15 de Dezembro, 2024",
+    duration: "20 horas",
     students: 1234,
     rating: 4.8,
     instructor: {
@@ -129,10 +135,6 @@ export default function CourseManagement() {
               <span>{courseData.duration}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Calendar className="w-5 h-5" />
-              <span>Início: {courseData.startDate}</span>
-            </div>
-            <div className="flex items-center gap-2">
               <Users className="w-5 h-5" />
               <span>{courseData.students} alunos</span>
             </div>
@@ -141,9 +143,11 @@ export default function CourseManagement() {
               <span>{courseData.rating} de avaliação</span>
             </div>
           </div>
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
           <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-            Matricular-se agora!
+            Matricule-se agora!
           </button>
+          </a>
         </div>
       </div>
 
@@ -223,9 +227,11 @@ export default function CourseManagement() {
                 </div>
               </div>
               <div className="mt-8">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                   Matricule-se agora!
                 </button>
+              </a>
               </div>
             </div>
           </div>
@@ -364,9 +370,11 @@ export default function CourseManagement() {
               Junte-se a milhares de profissionais que transformaram suas
               carreiras com nossa certificação
             </p>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
             <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-              Matricular-se agora!
+              Matricule-se agora!
             </button>
+            </a>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { ScrollFadeIn } from "@/components/ScrollComponent";
 export default function Contact() {
   const phoneNumber = "5585997099171";
   const message = encodeURIComponent(
-    "Olá! Gostaria de mais informações sobre os cursos."
+    "Olá! Gostaria de mais informações sobre os treinamentos ou consultoria."
   );
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
 

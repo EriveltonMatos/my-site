@@ -77,7 +77,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={20} className="text-blue-400" />
-                <span>(11) 9999-9999</span>
+                <span>(85) 997099171</span>
               </li>
               <li className="flex items-center space-x-3">
                 <MapPin size={20} className="text-blue-400" />
