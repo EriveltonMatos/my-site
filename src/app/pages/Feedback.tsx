@@ -9,7 +9,6 @@ import {
   Heart,
   BookOpen,
 } from "lucide-react";
-import ash from "@/assets/ash.jpg";
 import uendel from "@/assets/feedbacks/uendel.png";
 import juan from "@/assets/feedbacks/juan.png";
 import erivelton from "@/assets/feedbacks/erivelton.png";
