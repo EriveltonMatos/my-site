@@ -3,17 +3,17 @@ import "./globals.css";
 import agileContact from "@/assets/agile-change-contact.png";
 
 export const metadata: Metadata = {
-  title: "Agile Consultoria",
-  description: "Descrição breve e chamativa do seu site.",
+  title: "Agile Change Consultoria",
+  description: "Cursos, treinamentos e mentorias",
   openGraph: {
-    title: "Agile Consultoria",
-    description: "Cursos, treinamentos, etc",
+    title: "Agile Change Consultoria",
+    description: "Cursos, treinamentos e mentorias",
     images: [
       {
         url: agileContact.src,
       },
     ],
-    url: "https://agilechangeconsultoria.com",
+    url: "https://agilechangeconsultoria.com/",
     type: "website",
   },
   icons: {

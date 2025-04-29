@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import curso from "@/assets/curso.png";
+import cursoGerenciamento from "@/assets/curso-gerenciamento.png";
+import cursoIA from "@/assets/curso-ia.png";
 import Link from "next/link";
 import NavBar from "@/components/Navbar";
 import SliderBtns from "@/components/SliderBtns";
@@ -18,13 +20,13 @@ const slidesData = [
   },
   {
     id: 2,
-    image: curso,
+    image: cursoGerenciamento,
     alt: "Logo do curso",
     url: "/cursos",
   },
   {
     id: 3,
-    image: curso,
+    image: cursoIA,
     alt: "Logo do curso",
     url: "/cursos",
   },
