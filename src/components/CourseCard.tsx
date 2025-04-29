@@ -15,7 +15,7 @@ export default function CourseCard({ course }: CourseCardProps) {
         <Image
           src={course.image}
           alt={course.title}
-          layout="fill"
+          fill
           className="rounded-t-xl object-cover group-hover group-hover:scale-95 transform transition duration-300"
         />
       </div>
